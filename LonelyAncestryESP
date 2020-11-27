@@ -27,7 +27,7 @@ ItemName.Size = UDim2.new(0, 200, 0, 50)
 ItemName.SizeConstraint = Enum.SizeConstraint.RelativeYY
 ItemName.Font = Enum.Font.Cartoon
 ItemName.TextColor3 = Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255))
-ItemName.TextSize = 32
+ItemName.TextSize = 29
 ItemName.TextWrapped = true
 ItemName.Text = v.Name
 
