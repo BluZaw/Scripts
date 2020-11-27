@@ -1,0 +1,38 @@
+-- Made by BluZaw | 2020
+
+while true do 
+
+wait(5)
+
+for _,v in pairs (game.Workspace.Main.Items:GetChildren()) do
+
+if not v:FindFirstChild("ActualGUI") then
+
+local ActualGUI = Instance.new("BillboardGui")
+local ItemName = Instance.new("TextLabel")
+
+ActualGUI.Name = "ActualGUI"
+ActualGUI.Parent = v
+ActualGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ActualGUI.Active = true
+ActualGUI.AlwaysOnTop = true
+ActualGUI.LightInfluence = 1.000
+ActualGUI.Size = UDim2.new(0, 200, 0, 50)
+
+ItemName.Name = "ItemName"
+ItemName.Parent = ActualGUI
+ItemName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ItemName.BackgroundTransparency = 1.000
+ItemName.Size = UDim2.new(0, 200, 0, 50)
+ItemName.SizeConstraint = Enum.SizeConstraint.RelativeYY
+ItemName.Font = Enum.Font.Cartoon
+ItemName.TextColor3 = Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255))
+ItemName.TextSize = 32
+ItemName.TextWrapped = true
+ItemName.Text = v.Name
+
+else
+
+end
+end
+end
