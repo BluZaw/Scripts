@@ -20,7 +20,7 @@ local Credits = Instance.new("TextLabel")
 
 -- Notification:
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Animation grabber";
+	Title = "Animation Grabber";
 	Text = "Made by BluZaw";
 	Icon = "rbxassetid://3703056618";
 	Duration = 10;
@@ -53,7 +53,7 @@ StealID.BorderSizePixel = 0
 StealID.Position = UDim2.new(0.392569005, 0, 0.711718023, 0)
 StealID.Size = UDim2.new(0.210772827, 0, 0.0905660391, 0)
 StealID.Font = Enum.Font.Ubuntu
-StealID.Text = "Steal ID"
+StealID.Text = "Grab ID"
 StealID.TextColor3 = Color3.fromRGB(0, 0, 0)
 StealID.TextScaled = true
 StealID.TextSize = 14.000
@@ -107,9 +107,9 @@ StealID.MouseButton1Down:Connect(function()
 			IDDisplayer.Text = AnimaTrack.Animation.AnimationId
 		end
 	end
-	StealID.Text = "Stolen!"
+	StealID.Text = "Grabbed ID!"
 	wait(1.5)
-    StealID.Text = "Steal ID"	
+    StealID.Text = "Grab ID"	
 end)
 
 CopyToClipboard.MouseButton1Down:Connect(function()
