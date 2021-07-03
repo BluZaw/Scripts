@@ -8,6 +8,8 @@
   Animation Stealer by BluZaw#5188
  ]]--                                   
 
+-- https://assetdelivery.roblox.com/v1/asset/?id=AnimIDHere | Replace AnimIDHere with the id of the animation
+
 -- Instances:
 
 local StealGUI = Instance.new("ScreenGui")
